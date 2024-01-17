@@ -31,5 +31,8 @@ router.route("/:id").get(getProductById);
 //     }
 //   })
 // );
-
+const item = [];
+function addItem(text) {
+  item.push({ ...text, completed: false });
+}
 export default router;
